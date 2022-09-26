@@ -1,0 +1,7 @@
+<p [ngClass]="{'info': messageType === 'info', 'error': messageType !== 'info'}">Mensaje importante</p>
+
+<p [ngStyle]="{'color': messageType === 'info' ? 'green' : 'red' }">Mensaje poco importante</p>
+
+<input type="text" [(ngModel)] = "inputValue">
+
+<p>Valor del input "{{inputValue}}"</p>
